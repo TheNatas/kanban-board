@@ -11,8 +11,6 @@ This project is organized in "BACK" and "FRONT" directories. In order to install
 > npm install
 ```
 
-Ela responderá na porta 5000.
-
 ```
 > cd FRONT
 > npm install
@@ -26,10 +24,12 @@ To start the application, you'll need to start both the backend server and the a
 > cd BACK
 > npm run server
 ```
+It will respond on port 5000.
 ```
 > cd FRONT
 > ng serve -o
 ```
+It will open on port 4200.
 
 #### Authentication
 
