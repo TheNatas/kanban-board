@@ -36,5 +36,6 @@ It will open on port 4200.
 This project relies on JWT authentication, so, in order to have full access to its main page, you'll have to login as a registered user using the given credentials:
 
 ```
-{ "login":"letscode", "senha":"lets@123" }
+login: "letscode"
+password: "lets@123"
 ```
