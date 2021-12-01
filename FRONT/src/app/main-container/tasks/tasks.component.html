@@ -1,0 +1,26 @@
+<!-- Modo visualização -->
+<div class="card my-card"
+  *ngIf="!editMode; else editModeCard">
+  <div class="card-header">
+    <h4>{{task.titulo}}</h4>
+    <img src="../assets/edit.png" id="img-edit" (click)="onEdit()">
+  </div>
+  <p>{{task.conteudo}}</p>
+  <div class="d-flex justify-content-between">
+    <img src="../assets/previous.png" (click)="onPrevious()">
+    <img src="../assets/delete.png" (click)="onDelete()">
+    <img src="../assets/next.png" (click)="onNext()">
+  </div>
+</div>
+
+<!-- Modo edição -->
+<ng-template #editModeCard>
+  <div class="card my-card">
+    <input type="text" class="card-header" placeholder="Título" [(ngModel)]="titleInput">
+    <textarea placeholder="Conteúdo" [(ngModel)]="contentInput"></textarea>
+    <div class="d-flex justify-content-between">
+      <img src="../assets/cancel.png" id="img-cancel" (click)="onCancel()">
+      <img src="../assets/save.png" id="img-save" (click)="saveChangesOnCard()">
+    </div>
+  </div>
+</ng-template>

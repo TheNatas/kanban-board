@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-md-3 my-column">
+      <h2 id="new">New</h2>
+      <app-new
+        (newCardAdded)="onNewCardAdded($event)"></app-new>
+    </div>
+    
+    <div class="col-12 col-md-3 my-column">
+      <h2 id="todo">ToDo</h2>
+      <app-tasks
+        (cardChangesSaved)="onCardChangesSaved($event)"
+        (cardDeleted)="onCardDeleted($event)"
+        (cardListChanged)="onCardListChange($event)"
+        *ngFor="let task of toDoTasks"
+        [task]="task">
+      </app-tasks>
+    </div>
+
+    <div class="col-12 col-md-3 my-column">
+      <h2 id="doing">Doing</h2>
+      <app-tasks
+        (cardChangesSaved)="onCardChangesSaved($event)"
+        (cardDeleted)="onCardDeleted($event)"
+        (cardListChanged)="onCardListChange($event)"
+        *ngFor="let task of doingTasks"
+        [task]="task">
+      </app-tasks>
+    </div>
+
+    <div class="col-12 col-md-3 my-column">
+      <h2 id="done">Done</h2>
+      <app-tasks
+        (cardChangesSaved)="onCardChangesSaved($event)"
+        (cardDeleted)="onCardDeleted($event)"
+        (cardListChanged)="onCardListChange($event)"
+        *ngFor="let task of doneTasks"
+        [task]="task">
+      </app-tasks>
+    </div>
+
+  </div>
+</div>
+<div class="overlay"></div>

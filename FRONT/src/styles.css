@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  background-image: url('assets/background.jpg');
+  color: white;
+}
+
+img{
+  width: 32px;
+  cursor: pointer;
+}
+
+.my-card{
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all .5s ease-out;
+  border: none;
+}
+
+.my-card:hover{
+  box-shadow: .2rem .2rem 1rem .5rem rgba(0, 0, 0, 0.4);
+}
+
+.my-card div.card-header{
+  color: #FF5403;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.my-card input{
+  background-color: #F7F7F7;
+}
