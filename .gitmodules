@@ -1,0 +1,3 @@
+[submodule "FRONT"]
+	path = FRONT
+	url = git@github.com:TheNatas/kanban-board-front.git
