@@ -1,6 +1,6 @@
 # Kanban Board (Angular)
 
-Simple Angular project featuring a kanban board with "ToDo", "Doing" and "Done" columns, as well as a "New" column to add a task.
+Simple Angular project featuring a kanban board with "ToDo", "Doing" and "Done" columns, as well as a "New" column to add a task. Backend taken from [Final Project Angular - BACK](https://github.com/lpqueiroz/ProjetoFinalAngular), by [lpqueiroz](https://github.com/lpqueiroz). Made under the Web FullStack course by Let's Code scope.
 
 ### Installation
 
