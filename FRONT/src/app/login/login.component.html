@@ -1,0 +1,19 @@
+<div class="card my-container">
+  <span>Faça seu login</span>
+  <form 
+    (ngSubmit)="onSubmit()"
+    [formGroup]="loginForm">
+
+    <input type="text" class="form-control mb-3" placeholder="Login" name="login-input" aria-describedby="login-input-helper"
+      formControlName="login">
+    <div id="login-input-helper" class="form-text visually-hidden">Login</div>
+
+    <input type="password" class="form-control mb-3" placeholder="Password" name="password-input" aria-describedby="password-input-helper"
+      formControlName="senha">
+    <div id="password-input-helper" class="form-text visually-hidden">Password</div>
+    
+    <button type="submit" class="btn btn-primary">Login</button>
+
+  </form>
+</div>
+<div class="overlay"></div>
